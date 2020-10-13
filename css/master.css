@@ -15,6 +15,7 @@
 #bottom_nav{
   width: 100vw;
   height: 15vh;
+  min-height: 100px;
   background-color: #282828;
   color: #white;
 }
@@ -54,6 +55,42 @@
   border-bottom: 2px solid #ADFF2F;
 }
 
+.album{
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  margin: 20px 5% 0 0;
+}
+
+#metal{
+  background-image: url("../img/metal_lifting.jpg");
+}
+
+#player{
+  background-image: url("../img/player_left.jpg");
+}
+
+#sinister{
+  background-image: url("../img/sinister.jpeg");
+}
+
+#split{
+  background-image: url("../img/split.jpeg");
+}
+
+#stranger{
+  background-image: url("../img/stranger.jpeg");
+}
+
+#youg{
+  background-image: url("../img/youg.jpeg");
+}
+
+.caption{
+  width: 200px;
+  margin: 0 5% 0 0;
+  vertical-align: text-top;
+}
 
 /* DEBUG:  */
 
