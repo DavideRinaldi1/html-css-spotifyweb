@@ -62,6 +62,14 @@
   margin: 20px 2% 0 4px;
 }
 
+.artist{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-size: contain;
+  margin: 20px 2% 0 4px;
+}
+
 #metal{
   background-image: url("../img/metal_lifting.jpg");
 }
@@ -103,6 +111,15 @@
 #radar{
   background-image: url("../img/radar.jpeg");
 }
+
+#einaudi{
+  background-image: url("../img/einaudi.jpeg");
+}
+
+#beltrami{
+  background-image: url("../img/aquietplace.jpeg");
+}
+
 
 /* DEBUG:  */
 
