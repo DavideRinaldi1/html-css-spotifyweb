@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#side_bar{
+  width: 15vw;
+  height: 85vh;
+  background-color: black;
+  color: #FFF;
+}
+
+#bottom_nav{
+  width: 100vw;
+  height: 15vh;
+  background-color: #282828;
+  color: #white;
+}
+
+#main_content{
+  position: absolute;
+  top: 0;
+  left: 15vw;
+  width: 85vw;
+  height: 85vh;
+  background-color: #141922;
+  color: #FFF;
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.ms_container{
+  max-width: 90%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.music_nav ul li{
+  color: #717171;
+  padding: 20px 20px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.music_nav ul li:hover{
+  color: #FFF;
+}
+
+.music_nav ul li:active{
+  color: #FFF;
+  border-bottom: 2px solid #ADFF2F;
+}
+
+
+/* DEBUG:  */
+
+.debug{
+  border: 1px solid white;
+  height: 100vh;
+}
