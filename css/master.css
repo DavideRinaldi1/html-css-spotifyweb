@@ -59,7 +59,7 @@
   height: 200px;
   width: 200px;
   background-size: contain;
-  margin: 20px 5% 0 0;
+  margin: 20px 2% 0 4px;
 }
 
 #metal{
@@ -88,8 +88,20 @@
 
 .caption{
   width: 200px;
-  margin: 0 5% 0 0;
+  margin: 0 2% 0 4px;
   vertical-align: text-top;
+}
+
+.grey{
+  color: #717171;
+}
+
+#mixdaily{
+  background-image: url("../img/mixdaily.jpeg");
+}
+
+#radar{
+  background-image: url("../img/radar.jpeg");
 }
 
 /* DEBUG:  */
