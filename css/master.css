@@ -17,7 +17,7 @@ main{
   width: 250px;
   height: calc(100% - 150px);
   background-color: black;
-  color: #FFF;
+  color: #717171;;
 }
 
 #bottom_nav{
@@ -85,7 +85,109 @@ main{
   max-width: 180px;
 }
 
+.menu > ul > li{
+  color: #717171;
+  font-weight: 600;
+  border-left: 2px solid black;
+}
 
+.menu ul li img{
+  width: 25px;
+  margin: 5px 5px 5px 10px;
+  padding-left: 15px;
+  box-sizing: content-box;
+}
+
+.menu > ul > li:active{
+  border-left: 2px solid #ADFF2F;
+}
+
+.menu ul li:hover{
+  color: #fff;
+  font-weight: 800;
+}
+
+.playlist h5{
+  color: #FFF;
+  margin: 5px 5px 5px 25px;
+}
+
+
+.add_playlist{
+  flex-direction: row;
+  align-items: center;
+}
+
+.add_playlist:hover{
+  color: white;
+}
+
+.box_add{
+  width: 35px;
+  height: 35px;
+  background-color: #A3A3A3;
+  margin: 10px 10px 10px 25px;
+  display: flex;
+}
+
+.box_add:hover{
+  background-color: #FFF;
+}
+
+.box_add i{
+  font-size: 2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.list_playlist{
+  overflow-y: scroll;
+  height: 30%;
+}
+
+.list_playlist ul li {
+  font-weight: 600;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.list_playlist ul li:hover {
+  color: #FFF;
+}
+
+.user{
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  width: 200px;
+  height: 100px;
+}
+
+.user > span:first-of-type:hover{
+  color: #FFF;
+}
+
+.user > span:last-of-type{
+  color: #FFF
+}
+
+.profile{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #717171;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+.profile img{
+  width: 20px;
+  vertical-align: middle;
+}
 
 /* MAIN CONTENT */
 
@@ -170,14 +272,75 @@ main{
   background-image: url("../img/aquietplace.jpeg");
 }
 
+
+/* BOTTOM-NAV */
+
+.img_album img{
+  width: 50px;
+  margin-left: 20px;
+}
+
+.description_album{
+  color: #FFF;
+  margin-left: 10px;
+  position: relative;
+  top: 58px;
+}
+
+.title > span,
+.like i{
+  color: #7c7c7c;
+}
+
+.like i{
+  margin: 8px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.like i:last-of-type{
+  margin-right: 33px;
+}
+
+.player i{
+  font-size: 2rem;
+  margin: 30px 15px;
+  color: #FFF;
+  vertical-align: middle;
+}
+
+.player i:nth-of-type(3n+0){
+  font-size: 4rem;
+  margin: 15px;
+  color: #FFF;
+}
+
 /* COMMON */
+.p-relative{
+position: relative;
+}
 
 .flex{
   display: flex;
 }
 
+.h50{
+  height: 50px;
+}
+
+.lh{
+  line-height: normal;
+}
+.lh50{
+  line-height: 50px;
+}
+
 .lh100{
   line-height: 100px;
+}
+
+.lh150{
+  line-height: 149px;
 }
 
 .v-align{
@@ -188,9 +351,13 @@ main{
   float: right;
 }
 
+.f-left{
+  float: left;
+}
+
 /* DEBUG:  */
 
 .debug{
   border: 1px solid white;
-  height: 100vh;
+  height: 150px
 }
