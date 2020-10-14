@@ -5,27 +5,46 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+main{
+  width: 100%;
+  height: 100vh;
+}
+
 #side_bar{
-  width: 15vw;
-  height: 85vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: calc(100% - 150px);
   background-color: black;
   color: #FFF;
 }
 
 #bottom_nav{
-  width: 100vw;
-  height: 15vh;
-  min-height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 150px;
   background-color: #282828;
   color: #white;
 }
 
-#main_content{
+#upgrade{
   position: absolute;
   top: 0;
-  left: 15vw;
-  width: 85vw;
-  height: 85vh;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 100px;
+  background-color: #080B12;
+}
+
+#main_content{
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: calc(100% - 150px - 100px);
   background-color: #141922;
   color: #FFF;
   overflow: scroll;
@@ -38,6 +57,37 @@
   max-height: 100%;
   margin: auto;
 }
+
+/* UPGRADE */
+
+.ms_button{
+  background-color: #080B12 !important;
+  border: 1px solid white !important;
+  border-radius: 100px !important;
+  padding: 10px 40px !important;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 10px;
+  outline: none !important;
+}
+
+.ms_button:hover{
+  font-weight: 800;
+  border: 2px solid white;
+}
+
+/* SIDE BAR */
+
+#logo{
+  width: 70%;
+  margin: 25px;
+  max-width: 180px;
+}
+
+
+
+/* MAIN CONTENT */
 
 .music_nav ul li{
   color: #717171;
@@ -120,6 +170,23 @@
   background-image: url("../img/aquietplace.jpeg");
 }
 
+/* COMMON */
+
+.flex{
+  display: flex;
+}
+
+.lh100{
+  line-height: 100px;
+}
+
+.v-align{
+  vertical-align: middle;
+}
+
+.f-right{
+  float: right;
+}
 
 /* DEBUG:  */
 

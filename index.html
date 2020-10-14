@@ -6,69 +6,86 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Font-aswesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- font Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>SpotifyWebApp</title>
   </head>
   <body>
-    <section id="side_bar">
-      <div class="ms_container">
-
-      </div>
-    </section>
-
-    <section id="main_content">
-      <div class="ms_container">
-        <!-- esplora musica -->
-        <nav class="music_nav text-center">
-          <ul class="list-unstyled list-inline">
-            <li class="text-uppercase">in evidenza</li>
-            <li class="text-uppercase">podcast</li>
-            <li class="text-uppercase">classifiche</li>
-            <li class="text-uppercase">generi e mood</li>
-            <li class="text-uppercase">nuove uscite</li>
-            <li class="text-uppercase">scopri</li>
-          </ul>
-        </nav>
-        <!-- Riprodotti di recente -->
-        <div class="row">
-          <h1><strong>Recently played</strong></h1>
-          <ul class="list-unstyled list-inline">
-            <li class="text-center"><div class="album" id="metal"></div><span class="caption"><strong>Heavy Metal</strong><br>Created by you</span></li>
-            <li class="text-center"><div class="album" id="player"></div><span class="caption"><strong>HillTop Hoods</strong><br>Created by you</span></li>
-            <li class="text-center"><div class="album" id="sinister"></div><span class="caption"><strong>Sinister</strong><br>Created by you</span></li>
-            <li class="text-center"><div class="album" id="split"></div><span class="caption"><strong>Split</strong><br>Created by you</span></li>
-            <li class="text-center"><div class="album" id="stranger"></div><span class="caption"><strong>Stranger Things</strong><br>Netflix Inc.</span></li>
-            <li class="text-center"><div class="album" id="youg"></div><span class="caption"><strong>Youg</strong><br>Lana Del Rey</span></li>
-          </ul>
+    <main>
+      <section id="side_bar">
+        <div class="ms_container">
+          <div class="row">
+            <img id="logo" src="img/logo.svg" alt="">
+          </div>
+          <div class="row menu">
+            <ul class="list-unstyled">
+              <li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+              <li><i class="fa fa-search" aria-hidden="true"></i>Cerca</li>
+              <li>La tua libreria</li>
+            </ul>
+          </div>
         </div>
-        <!-- Creato per te -->
-        <div class="row">
-          <h1><strong>Creato per Jhon</strong></h1>
-          <span class="grey"><strong>Più ascolti, più saranno accurati i tuoi suggerimenti</strong></span>
-          <ul class="list-unstyled list-inline">
-            <li class="text-center"><div class="album" id="mixdaily"></div><span class="caption"><strong>Mix Daily</strong></span></li>
-            <li class="text-center"><div class="album" id="radar"></div><span class="caption"><strong>Il tuo Relase Radar</strong></span></li>
-          </ul>
-        </div>
-        <!-- artisti più popolari -->
-        <div class="row">
-          <h1><strong>Artisti più popolari</strong></h1>
-          <span class="grey"><strong>Più ascolti, più saranno accurati i tuoi suggerimenti</strong></span>
-          <ul class="list-unstyled list-inline">
-            <li class="text-center"><div class="artist" id="einaudi"></div><span class="caption"><strong>Ludovico Einaudi</strong></span></li>
-            <li class="text-center"><div class="artist" id="beltrami"></div><span class="caption"><strong>Marco Beltrami</strong></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="bottom_nav">
-      <div class="ms_container">
+      <section id="upgrade">
+        <div class="lh100 v-align f-right">
+          <button type="button" class="btn btn-primary btn-md active ms_button">Effettua l'upgrade</button>
+        </div>
+      </section>
 
-      </div>
-    </section>
+      <section id="main_content">
+        <div class="ms_container">
+          <!-- esplora musica -->
+          <nav class="music_nav text-center">
+            <ul class="list-unstyled list-inline">
+              <li class="text-uppercase">in evidenza</li>
+              <li class="text-uppercase">podcast</li>
+              <li class="text-uppercase">classifiche</li>
+              <li class="text-uppercase">generi e mood</li>
+              <li class="text-uppercase">nuove uscite</li>
+              <li class="text-uppercase">scopri</li>
+            </ul>
+          </nav>
+          <!-- Riprodotti di recente -->
+          <div class="row">
+            <h1><strong>Recently played</strong></h1>
+            <ul class="list-unstyled list-inline">
+              <li class="text-center"><div class="album" id="metal"></div><span class="caption"><strong>Heavy Metal</strong><br>Created by you</span></li>
+              <li class="text-center"><div class="album" id="player"></div><span class="caption"><strong>HillTop Hoods</strong><br>Created by you</span></li>
+              <li class="text-center"><div class="album" id="sinister"></div><span class="caption"><strong>Sinister</strong><br>Created by you</span></li>
+              <li class="text-center"><div class="album" id="split"></div><span class="caption"><strong>Split</strong><br>Created by you</span></li>
+              <li class="text-center"><div class="album" id="stranger"></div><span class="caption"><strong>Stranger Things</strong><br>Netflix Inc.</span></li>
+              <li class="text-center"><div class="album" id="youg"></div><span class="caption"><strong>Youg</strong><br>Lana Del Rey</span></li>
+            </ul>
+          </div>
+          <!-- Creato per te -->
+          <div class="row">
+            <h1><strong>Creato per Jhon</strong></h1>
+            <span class="grey"><strong>Più ascolti, più saranno accurati i tuoi suggerimenti</strong></span>
+            <ul class="list-unstyled list-inline">
+              <li class="text-center"><div class="album" id="mixdaily"></div><span class="caption"><strong>Mix Daily</strong></span></li>
+              <li class="text-center"><div class="album" id="radar"></div><span class="caption"><strong>Il tuo Relase Radar</strong></span></li>
+            </ul>
+          </div>
+          <!-- artisti più popolari -->
+          <div class="row">
+            <h1><strong>Artisti più popolari</strong></h1>
+            <span class="grey"><strong>Più ascolti, più saranno accurati i tuoi suggerimenti</strong></span>
+            <ul class="list-unstyled list-inline">
+              <li class="text-center"><div class="artist" id="einaudi"></div><span class="caption"><strong>Ludovico Einaudi</strong></span></li>
+              <li class="text-center"><div class="artist" id="beltrami"></div><span class="caption"><strong>Marco Beltrami</strong></li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+      <section id="bottom_nav">
+          <div class="ms_container">
+
+          </div>
+      </section>
+    </main>
   </body>
 </html>
