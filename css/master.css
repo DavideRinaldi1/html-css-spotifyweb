@@ -90,9 +90,17 @@ main{
 /* SIDE BAR */
 
 #logo{
-  width: 70%;
+  width: 100%;
   margin: 25px;
   max-width: 180px;
+}
+
+.logo{
+  width: 103px;
+}
+
+.menu{
+  height: 115px;
 }
 
 .menu > ul > li{
@@ -117,11 +125,14 @@ main{
   font-weight: 800;
 }
 
+.playlist{
+  height: calc(100% - 318px);
+}
+
 .playlist h5{
   color: #FFF;
   margin: 5px 5px 5px 25px;
 }
-
 
 .add_playlist{
   flex-direction: row;
@@ -186,6 +197,7 @@ main{
   left: 35px;
   width: 200px;
   height: 100px;
+  background-color: black;
 }
 
 .user > span:first-of-type:hover{
@@ -345,7 +357,7 @@ label{
 #progress{
   display: inline-block;
   height: 5px;
-  width: 700px;
+  width: 60%;
   background-color: #7C7C7C;
   border-radius: 5px;
 }
@@ -360,14 +372,14 @@ label{
   margin: 5px;
 }
 
-.volume{
+/* .volume{
   display: inline-block;
   height: 5px;
-  width: 100px;
+  width: 60%;
   margin-right: 10px;
   background-color: #7C7C7C;
   border-radius: 5px;
-}
+} */
 
 /* COMMON */
 .p-relative{
