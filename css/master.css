@@ -441,21 +441,66 @@ main{
 
 /* BOTTOM-NAV */
 
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sx_menu{
+  display: flex;
+  width: 16%;
+  height: 150px;
+
+}
+
+.sx_menu img{
+  width: 50px;
+}
+
+.sx_menu .miniplayer_title{
+  margin-left: 15px;
+}
+
+.sx_menu .miniplayer_title strong{
+  color: #FFF;
+}
+
+.sx_menu .miniplayer_title span{
+  color: #7C7C7C;
+  font-size: 1rem;
+}
+
+.miniplayer_like i{
+  margin: 8px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7C7C7C;
+}
+
+/* [class*=col-]{
+  padding: 0;
+}
+
 .img_album img{
   width: 50px;
-  margin-left: 20px;
+  margin-left: 48px;
 }
 
 .description_album{
   color: #FFF;
-  margin-left: 10px;
   position: relative;
-  top: 58px;
+  top: 55px;
 }
 
-.title > span,
+.name span,
 .like i{
   color: #7c7c7c;
+}
+
+.name > span{
+  font-size: 1rem
 }
 
 .like i{
@@ -516,7 +561,7 @@ label{
 }
 
 /* BOTTOMNAV RESPONSIVE */
- @media screen and (min-width: 768px) and (max-width: 1075px){
+ /* @media screen and (min-width: 768px) and (max-width: 1075px){
   .like i{
     display: block;
     position: relative;
@@ -571,7 +616,7 @@ label{
 @media screen and (max-width: 708px) {
   .like i{
     display: none;
-  }
+  } */
 }
 
 /* COMMON */
