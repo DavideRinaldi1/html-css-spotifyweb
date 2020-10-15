@@ -248,6 +248,8 @@ main{
 @media screen and (max-width: 767px) {
   #side_bar{
     width: 70px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   #main_content{
@@ -298,6 +300,7 @@ main{
 
   .download_responsive{
     margin: 15px 15px 15px 4px;
+    padding-top: 10px;
   }
 
   .profile_responsive img{
@@ -342,8 +345,33 @@ main{
   cursor: pointer;
 }
 
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
 .album:hover{
   opacity: 0.5;
+}
+
+.text:hover{
+  opacity: 0.8;
 }
 
 .artist{
@@ -358,6 +386,8 @@ main{
 .artist:hover{
   opacity: 0.5;
 }
+
+
 
 #metal{
   background-image: url("../img/metal_lifting.jpg");
@@ -438,6 +468,10 @@ main{
   margin-right: 33px;
 }
 
+.main_player{
+  min-width: 266px;
+}
+
 .player i{
   font-size: 2rem;
   margin: 30px 15px;
@@ -455,18 +489,15 @@ label{
   color: #7c7c7c;
   font-size: 1.2rem;
   vertical-align: middle;
+  margin: 3px;
 }
 
 #progress{
   display: inline-block;
   height: 5px;
-  width: 60%;
+  width: 50%;
   background-color: #7C7C7C;
   border-radius: 5px;
-}
-
-.right_menu{
-  display: inline-block;
 }
 
 .right_menu > .fa{
@@ -475,14 +506,73 @@ label{
   margin: 5px;
 }
 
-/* .volume{
+.volume{
   display: inline-block;
   height: 5px;
-  width: 60%;
+  width: 18%;
   margin-right: 10px;
   background-color: #7C7C7C;
   border-radius: 5px;
-} */
+}
+
+/* BOTTOMNAV RESPONSIVE */
+ @media screen and (min-width: 768px) and (max-width: 1075px){
+  .like i{
+    display: block;
+    position: relative;
+    top: 40px;
+  }
+ }
+
+@media screen and (max-width: 924px) {
+  .img_album img{
+    width: 30px;
+  }
+
+  .title{
+    font-size: 1rem
+  }
+
+  .like i{
+    font-size: 1.2rem;
+  }
+
+  .player i:nth-of-type(3n+0){
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .album_list{
+    text-align: center;
+  }
+
+  .like i{
+    display: block;
+    position: relative;
+    top: 48px;
+    font-size: 1rem;
+  }
+
+  .player i{
+    font-size: 1.5rem;
+  }
+
+  label{
+    font-size: 0.9rem;
+
+  }
+
+  .right_menu .fa{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 708px) {
+  .like i{
+    display: none;
+  }
+}
 
 /* COMMON */
 .p-relative{
@@ -526,6 +616,10 @@ position: relative;
 
 .f-left{
   float: left;
+}
+
+.d-inline{
+  display: inline;
 }
 
 /* DEBUG:  */
