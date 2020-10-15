@@ -5,6 +5,15 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    overflow: hidden;
+}
+
 main{
   width: 100%;
   height: 100vh;
@@ -64,8 +73,8 @@ main{
 
 .ms_container{
   max-width: 90%;
-  max-height: 100%;
   margin: auto;
+  height: 100%;
 }
 
 /* UPGRADE */
@@ -93,6 +102,13 @@ main{
   width: 100%;
   margin: 25px;
   max-width: 180px;
+  cursor: pointer;
+}
+
+#logo-small{
+  width: 55px;
+  margin: 15px 15px 15px 18px;
+  cursor: pointer;
 }
 
 .logo{
@@ -166,8 +182,13 @@ main{
 }
 
 .list_playlist{
-  overflow-y: scroll;
-  height: 30%;
+  overflow-y: hidden;
+  height: 80%;
+}
+
+.list_playlist .list-unstyled {
+    height: 80%;
+    overflow-y: scroll;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -192,9 +213,9 @@ main{
 }
 
 .user{
-  position: absolute;
-  bottom: 0;
-  left: 35px;
+  /* position: absolute;
+  bottom: 0; */
+  padding-left: 26px;
   width: 200px;
   height: 100px;
   background-color: black;
@@ -222,6 +243,78 @@ main{
   vertical-align: middle;
 }
 
+/* SIDEBAR RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+  #side_bar{
+    width: 70px;
+  }
+
+  #main_content{
+  left: 70px;
+  width: calc(100% - 70px);
+  }
+
+  #upgrade{
+    left: 70px;
+    width: calc(100% - 70px);
+  }
+
+  .logo > img{
+    display: none;
+  }
+
+  .menu > ul{
+    display: none;
+  }
+
+  .playlist h5{
+    display: none;
+  }
+
+  .playlist .add_playlist{
+    display: none;
+  }
+
+  .playlist .list_playlist{
+    display: none;
+  }
+
+  .user span{
+    display: none;
+  }
+
+  .user hr{
+    display: none;
+  }
+
+  .user .profile{
+    display: none;
+  }
+
+  .list_responsive li img{
+    width: 35px !important;
+  }
+
+  .download_responsive{
+    margin: 15px 15px 15px 4px;
+  }
+
+  .profile_responsive img{
+    width: 20px;
+    vertical-align: middle;
+  }
+
+  .profile_responsive{
+  width: 30px;
+  height: 30px;
+  background-color: #717171;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+}
+
 /* MAIN CONTENT */
 
 .music_nav ul li{
@@ -245,7 +338,12 @@ main{
   height: 200px;
   width: 200px;
   background-size: contain;
-  margin: 20px 2% 0 4px;
+  margin: 20px 2% 20px 0px;
+  cursor: pointer;
+}
+
+.album:hover{
+  opacity: 0.5;
 }
 
 .artist{
@@ -253,7 +351,12 @@ main{
   width: 200px;
   border-radius: 50%;
   background-size: contain;
-  margin: 20px 2% 0 4px;
+  margin: 20px 2% 20px 0px;
+  cursor: pointer;
+}
+
+.artist:hover{
+  opacity: 0.5;
 }
 
 #metal{
