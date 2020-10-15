@@ -444,23 +444,19 @@ main{
 .container-flex{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .sx_menu{
-  display: flex;
-  width: 16%;
+  width: 20%;
+  min-width: 75px;
   height: 150px;
-
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .sx_menu img{
   width: 50px;
-}
-
-.sx_menu .miniplayer_title{
-  margin-left: 15px;
+  margin: 15px;
 }
 
 .sx_menu .miniplayer_title strong{
@@ -479,48 +475,21 @@ main{
   color: #7C7C7C;
 }
 
-/* [class*=col-]{
-  padding: 0;
+.music_player{
+  width: 60%;
+  min-width: 217px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.img_album img{
-  width: 50px;
-  margin-left: 48px;
-}
-
-.description_album{
-  color: #FFF;
-  position: relative;
-  top: 55px;
-}
-
-.name span,
-.like i{
-  color: #7c7c7c;
-}
-
-.name > span{
-  font-size: 1rem
-}
-
-.like i{
-  margin: 8px;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.like i:last-of-type{
-  margin-right: 33px;
-}
-
-.main_player{
-  min-width: 266px;
+.player{
+  color: white;
+  justify-content: center;
 }
 
 .player i{
+  margin: 10px;
   font-size: 2rem;
-  margin: 30px 15px;
-  color: #FFF;
   vertical-align: middle;
 }
 
@@ -528,6 +497,11 @@ main{
   font-size: 4rem;
   margin: 15px;
   color: #FFF;
+}
+
+.progress_bar{
+  width: 100%;
+  align-items: center;
 }
 
 label{
@@ -545,7 +519,15 @@ label{
   border-radius: 5px;
 }
 
-.right_menu > .fa{
+
+.menu_volume{
+  width: 20%;
+  min-width: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_volume > .fa{
   font-size: 2rem;
   color: #7c7c7c;
   margin: 5px;
@@ -554,69 +536,50 @@ label{
 .volume{
   display: inline-block;
   height: 5px;
-  width: 18%;
+  width: 25%;
   margin-right: 10px;
   background-color: #7C7C7C;
   border-radius: 5px;
 }
 
-/* BOTTOMNAV RESPONSIVE */
- /* @media screen and (min-width: 768px) and (max-width: 1075px){
-  .like i{
-    display: block;
-    position: relative;
-    top: 40px;
-  }
- }
-
-@media screen and (max-width: 924px) {
-  .img_album img{
+@media screen and (max-width: 525px) {
+  .sx_menu img{
     width: 30px;
+    margin: 5px;
   }
 
-  .title{
-    font-size: 1rem
-  }
-
-  .like i{
-    font-size: 1.2rem;
-  }
-
-  .player i:nth-of-type(3n+0){
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .album_list{
-    text-align: center;
-  }
-
-  .like i{
-    display: block;
-    position: relative;
-    top: 48px;
+  .sx_menu .miniplayer_title strong{
     font-size: 1rem;
   }
 
+  .sx_menu .miniplayer_title span{
+    font-size: 0.8rem;
+  }
+
+  .miniplayer_like i{
+    margin: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7C7C7C;
+  }
+
   .player i{
+    margin: 5px;
     font-size: 1.5rem;
   }
 
-  label{
-    font-size: 0.9rem;
-
+  .player i:nth-of-type(3n+0){
+    font-size: 2rem;
+    margin: 10px;
   }
 
-  .right_menu .fa{
+  label{
+    font-size: 0.8rem;
+  }
+
+  .menu_volume > .fa{
     font-size: 1.2rem;
   }
-}
-
-@media screen and (max-width: 708px) {
-  .like i{
-    display: none;
-  } */
 }
 
 /* COMMON */
