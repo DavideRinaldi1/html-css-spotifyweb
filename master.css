@@ -346,7 +346,7 @@ main{
 }
 
 .overlay {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -358,17 +358,12 @@ main{
 .text {
   color: white;
   font-size: 6rem;
-  text-align: center;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.text span{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
 }
 
 .album:hover{
@@ -382,6 +377,7 @@ main{
 .artist{
   height: 200px;
   width: 200px;
+  border-radius: 50%;
   background-size: contain;
   margin: 20px 2% 20px 0px;
   cursor: pointer;
@@ -391,8 +387,30 @@ main{
   opacity: 0.5;
 }
 
-.album > img {
-  width: 200px;
+
+
+#metal{
+  background-image: url("../img/metal_lifting.jpg");
+}
+
+#player{
+  background-image: url("../img/player_left.jpg");
+}
+
+#sinister{
+  background-image: url("../img/sinister.jpeg");
+}
+
+#split{
+  background-image: url("../img/split.jpeg");
+}
+
+#stranger{
+  background-image: url("../img/stranger.jpeg");
+}
+
+#youg{
+  background-image: url("../img/youg.jpeg");
 }
 
 .caption{
@@ -404,11 +422,22 @@ main{
   color: #717171;
 }
 
-
-.artist > img{
-  width: 200px;
-  border-radius: 50%;
+#mixdaily{
+  background-image: url("../img/mixdaily.jpeg");
 }
+
+#radar{
+  background-image: url("../img/radar.jpeg");
+}
+
+#einaudi{
+  background-image: url("../img/einaudi.jpeg");
+}
+
+#beltrami{
+  background-image: url("../img/aquietplace.jpeg");
+}
+
 
 /* BOTTOM-NAV */
 
